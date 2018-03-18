@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.SelectProgramController">
+   <effect>
+      <SepiaTone level="0.31" />
+   </effect>
+   <children>
+      <VBox layoutX="201.0" layoutY="24.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="211.0" layoutY="24.0" prefHeight="41.0" prefWidth="819.0" style="-fx-font-family: Georgia; -fx-font-size: 18;" text="Please select program:" textAlignment="CENTER" wrapText="true">
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <ListView fx:id="listView" layoutX="201.0" layoutY="66.0" prefHeight="359.0" prefWidth="679.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
